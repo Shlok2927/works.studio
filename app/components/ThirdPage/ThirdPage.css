@@ -1,0 +1,50 @@
+section#thirdPage {
+  position: relative;
+  z-index: 1;
+  top: -1vh;
+  background: green;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 2.5vw;
+  align-items: flex-start;
+}
+section#thirdPage div {
+  position: relative;
+}
+section#thirdPage > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+  width: 30%;
+}
+section#thirdPage > div img {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+div.thirdTaglineContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transform: translate(-50%, -50%);
+  font-size: 250%;
+  color: white;
+  transition: all 0.4s linear;
+  opacity: 0;
+  font-family: loco;
+}
+section#thirdPage > div > div:hover .thirdTaglineContainer:nth-child(1n) {
+  opacity: 1;
+}

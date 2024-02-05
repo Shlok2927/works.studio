@@ -1,0 +1,81 @@
+section#secondPage {
+  margin-top: -0.5vh;
+  /* margin-bottom: -99vh; */
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+div#secondHeadings {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+div.secondTitles {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+  font-family: loco;
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  line-height: 5.5vw;
+  background-position: center;
+  background-size: cover;
+}
+div.movers {
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  z-index: -1;
+  transform: translate(0%, 75%) scaleY(0);
+  transform-origin: center;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  background-color: #f5e41b;
+}
+div.movers::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5e41b;
+  box-shadow: 0px 10px 40px 20px #f5e41b;
+}
+div.movers span {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  white-space: nowrap;
+  font-style: normal;
+  font-size: 18px;
+  font-family: loco-light;
+  color: black;
+  animation: movers 10s linear infinite;
+}
+@keyframes movers {
+  to {
+    left: -730px;
+  }
+  from {
+    left: 0px;
+  }
+}
