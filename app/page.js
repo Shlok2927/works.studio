@@ -15,7 +15,6 @@ const page = () => {
       smooth: true,
       lerp: 0.1,
       lenisOptions: {
-        wrapper: window,
         content: document.documentElement,
       },
     });
