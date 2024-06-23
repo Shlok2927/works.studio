@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "./ThirdPage.css";
 const ThirdPage = () => {
@@ -174,52 +175,50 @@ const ThirdPage = () => {
   ];
   return (
     <>
-      <div className="locoContainer" data-scroll-container>
-        <section id="thirdPage" data-scroll data-scroll-speed="10">
-          <div id="thirdLeftColumn">
-            {imgColumnOne.map((items, index) => (
-              <div key={index}>
-                <img src={`${items.imgSrc}`} />
-                <div className="thirdTaglineContainer">
-                  {items.tagline.map((tagline, taglineIndex) => (
-                    <div key={taglineIndex}>
-                      <div>{tagline}</div>
-                    </div>
-                  ))}
-                </div>
+      <section id="thirdPage">
+        <div id="thirdLeftColumn" data-scroll data-scroll-speed="0.5">
+          {imgColumnOne.map((items, index) => (
+            <div key={index}>
+              <img src={`${items.imgSrc}`} />
+              <div className="thirdTaglineContainer">
+                {items.tagline.map((tagline, taglineIndex) => (
+                  <div key={taglineIndex}>
+                    <div>{tagline}</div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <div id="thirdCenterColumn">
-            {imgColumnTwo.map((items, index) => (
-              <div key={index}>
-                <img src={`${items.imgSrc}`} />
-                <div className="thirdTaglineContainer">
-                  {items.tagline.map((tagline, taglineIndex) => (
-                    <div key={taglineIndex}>
-                      <div>{tagline}</div>
-                    </div>
-                  ))}
-                </div>
+            </div>
+          ))}
+        </div>
+        <div id="thirdCenterColumn" data-scroll data-scroll-speed="0.3">
+          {imgColumnTwo.map((items, index) => (
+            <div key={index}>
+              <img src={`${items.imgSrc}`} />
+              <div className="thirdTaglineContainer">
+                {items.tagline.map((tagline, taglineIndex) => (
+                  <div key={taglineIndex}>
+                    <div>{tagline}</div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <div id="thirdRightColumn">
-            {imgColumnThree.map((items, index) => (
-              <div key={index}>
-                <img src={`${items.imgSrc}`} />
-                <div className="thirdTaglineContainer">
-                  {items.tagline.map((tagline, taglineIndex) => (
-                    <div key={taglineIndex}>
-                      <div>{tagline}</div>
-                    </div>
-                  ))}
-                </div>
+            </div>
+          ))}
+        </div>
+        <div id="thirdRightColumn" data-scroll data-scroll-speed="0.5">
+          {imgColumnThree.map((items, index) => (
+            <div key={index}>
+              <img src={`${items.imgSrc}`} />
+              <div className="thirdTaglineContainer">
+                {items.tagline.map((tagline, taglineIndex) => (
+                  <div key={taglineIndex}>
+                    <div>{tagline}</div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </section>
-      </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 };

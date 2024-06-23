@@ -204,14 +204,13 @@ const SecondPage = () => {
 
   return (
     <>
-      {/* <div className="locoContainer"> */}
-      <section id="secondPage" data-scroll data-scroll-speed="2">
+      <section id="secondPage" data-scroll data-scroll-speed="0.4">
         <div id="secondHeadings">
-          <div className="secondTitles">
+          <div className="secondTitles" data-scroll data-scroll-speed="-0.2">
             {secondContent.map((items, index) => (
               <div key={index}>
                 <div
-                  data-imgSrc={items.imgSrc}
+                  data-imgsrc={items.imgSrc}
                   className={`movers lol${index}`}
                 >
                   {items.taglines.map((tagline, taglineIndex) => (

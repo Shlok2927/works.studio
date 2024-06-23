@@ -8,7 +8,7 @@ const FirstPage = () => {
         <div id="firstTop">
           <div id="firstTopLeft">
             <svg
-              class="core-logo"
+              className="core-logo"
               xmlns="http://www.w3.org/2000/svg"
               width="94"
               height="21"

@@ -1,0 +1,59 @@
+section#fourthFooterContainer {
+  position: relative;
+  margin-top: -20vh;
+  width: 100%;
+  height: 25vh;
+  font-size: 0.8vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+}
+div#fourthContainerTop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+div#fourthContainerTop img {
+  transform: rotate(180deg);
+  width: 1.5%;
+}
+div#fourthContainerBottom {
+  width: 100%;
+  height: 100%;
+  padding-inline: 7%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div#fourthBottomRight {
+  margin-right: -5%;
+  display: flex;
+  width: 30%;
+  justify-content: space-evenly;
+}
+
+div#fourthBottomRight > span,
+div#fourthBottomLeft,
+div#fourthContainerTop > span {
+  cursor: pointer;
+}
+.hoverAnimation {
+  position: relative;
+}
+.hoverDiv {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  width: 20%;
+  border-top: 1px solid white;
+  transform: translate(-50%, -50%);
+}

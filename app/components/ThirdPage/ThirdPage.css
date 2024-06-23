@@ -1,8 +1,7 @@
 section#thirdPage {
   position: relative;
   z-index: 1;
-  top: -1vh;
-  background: green;
+  margin-top: -45vh;
   width: 100%;
   min-height: 100vh;
   display: flex;

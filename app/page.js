@@ -4,6 +4,7 @@ import Loader from "./components/Loader/Loader";
 import FirstPage from "./components/FirstPage/FirstPage";
 import SecondPage from "./components/SecondPage/SecondPage";
 import ThirdPage from "./components/ThirdPage/ThirdPage";
+import FourthFooter from "./components/FourthPage/FourthFooter";
 import LocomotiveScroll from "locomotive-scroll";
 import "../node_modules/locomotive-scroll/bundled/locomotive-scroll.css";
 
@@ -13,6 +14,10 @@ const page = () => {
       el: document.querySelector(".locoContainer"),
       smooth: true,
       lerp: 0.1,
+      lenisOptions: {
+        wrapper: window,
+        content: document.documentElement,
+      },
     });
   }, []);
 
@@ -22,6 +27,7 @@ const page = () => {
       <FirstPage />;
       <SecondPage />
       <ThirdPage />
+      <FourthFooter />
     </>
   );
 };

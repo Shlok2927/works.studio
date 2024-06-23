@@ -39,7 +39,7 @@ const Loader = () => {
             muted
           />
           <svg
-            class="core-logo"
+            className="core-logo"
             xmlns="http://www.w3.org/2000/svg"
             width="94px"
             height="21px"
